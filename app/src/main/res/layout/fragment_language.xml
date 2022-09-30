@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oro.taxi.chofer.activity.LanguageChoosing"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_above="@+id/layout_apply"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginTop="25dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorLogoBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectionnez_votre_langue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/recycler_view_langue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_apply"
+        android:gravity="center"
+        android:background="@drawable/button_choose_photo"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/colorLogoBlack"
+            android:background="@drawable/custom_button"
+            android:layout_alignParentRight="true"
+            android:id="@+id/apply"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/apply" />
+    </RelativeLayout>
+
+</RelativeLayout>
